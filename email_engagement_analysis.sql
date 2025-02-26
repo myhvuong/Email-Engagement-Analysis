@@ -16,6 +16,7 @@ CTEATB AS (
         Email_Recipients, -- To get total sends from previous email sends
         SFMC_Link_Name,
         Descriptive_Link_Text, -- To replace Click_LinkName
+        CONCAT(Email_Name, '-', SFMC_Link_Name) AS CA_Email_Link_Name
     FROM [NimbleWorkspaceMBRS].[dbo].[Airtable_Elem_Engmt_Email_Links]
 ), 
 
