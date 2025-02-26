@@ -17,7 +17,6 @@ This SQL script enhances the analysis process by replacing manual Airtable updat
 4. **CTESNTCount (Sent Email Aggregation)**: Calculates the total number of recipients for each email job, serving as the denominator for CTR in reporting.
 
 5. **Final Query**:
-
 * Joins click data with valid sent emails.
 * Computes the recipients count by prioritizing Sent data aggregation over Airtable when discrepancies exist.
 * Extracts key attributes like Email Sequence and Institution Code for reporting.
